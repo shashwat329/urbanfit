@@ -4,10 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-body
-{
-    
-}
 #main
 {
     background-image: url('../img/main/home-banner.jpg');
@@ -250,7 +246,7 @@ body
 }
 .streng-4
 {
-    background-image: url(https://lh5.googleusercontent.com/p/AF1QipNkEPIzzfbaf3HF4N7uOvC8bgez0_qu7Mc3c31n=w243-h174-n-k-no-nu);
+    background-image: url(https://lh3.googleusercontent.com/p/AF1QipNZ-2g9zLzKjwZqw6BgDlQ0IaTSpgvAHvGW-j_S=s1360-w1360-h1020);
 }
 .streng-text
 {
@@ -699,4 +695,12 @@ footer
         /* border: 2px solid red; */
         margin-left: 18px;
     }
+}
+
+#success-message {
+    display: none;
+    color: #4CAF50;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
 }

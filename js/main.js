@@ -118,4 +118,9 @@ function fadeOut(elem, speed) {
 } ( jQuery ) );
 
 
-
+function submitForm() {
+    // Perform form submission logic here (you can use AJAX, etc.)
+    document.getElementById("success-message").style.display = "block";
+    // alert('succesfully submiited');
+    
+}
