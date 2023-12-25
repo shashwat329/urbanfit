@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <link rel="icon" href="img/logo.png" type="image/icon type">
     <title>URBANFIT</title>
 
    
@@ -364,14 +364,20 @@
                 </div>
                 <div class="col-md-6 col-md-offset-3 col-sm-12 text-center">
                     <div class="join-form" id="myForm">
-                        <input type="text" placeholder="NAME" >
-                        <input type="email" placeholder="EMAIL" >
-                        <select name="select" >
+                        <input type="text" id="name" placeholder="NAME" required>
+                        <span class="error-message" id="name-error"></span>
+                    
+                        <input type="email" id="email" placeholder="EMAIL" required>
+                        <span class="error-message" id="email-error"></span>
+                    
+                        <select name="select" id="membership" required>
                             <option value="Select Membership Package">Select Membership Package</option>
                             <option value="Standard">Standard</option>
-                            <option value="Professional">Proffesional</option>
+                            <option value="Professional">Professional</option>
                             <option value="Elite">Elite</option>
                         </select>
+                        <span class="error-message" id="membership-error"></span>
+                    
                         <button type="button" class="join-button" onclick="submitForm()">Join Now</button>
                         <p id="success-message">Form submitted successfully!</p>
                     </div>

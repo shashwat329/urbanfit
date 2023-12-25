@@ -488,20 +488,23 @@
     font-size: 19px;
     letter-spacing: 1px;
 }
-.join-form
-{
+/* here is everything about the form */
+.join-form {
     display: flex;
     flex-direction: column;
 }
-.join-form input, .join-form select
-{
+
+.join-form input,
+.join-form select {
     height: 50px;
     margin: 0 0 20px;
     padding-left: 15px;
     border-radius: none;
+    border: 1px solid #ddd; /* Added border style */
+    box-sizing: border-box;
 }
-.join-button
-{
+
+.join-button {
     height: 50px;
     box-shadow: none;
     font-size: 24px;
@@ -509,9 +512,22 @@
     background: #EE6059;
     color: #fff;
     border: none;
+    cursor: pointer;
+    border-radius: none;
 }
 
+#success-message {
+    display: none;
+    color: #4CAF50;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
 
+.error-message {
+    color: #FF0000;
+    margin-top: 5px;
+}
 
 /* Sekcja ftr */
 #ftr
@@ -697,10 +713,3 @@ footer
     }
 }
 
-#success-message {
-    display: none;
-    color: #4CAF50;
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 10px;
-}

@@ -119,8 +119,37 @@ function fadeOut(elem, speed) {
 
 
 function submitForm() {
+    // Form validation
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var membership = document.getElementById("membership").value;
+
+    // Reset previous error messages
+    document.getElementById("name-error").innerText = "";
+    document.getElementById("email-error").innerText = "";
+    document.getElementById("membership-error").innerText = "";
+
+    // Check if fields are not empty
+    if (name === "") {
+        document.getElementById("name-error").innerText = "Name is required";
+        return;
+    }
+
+    if (email === "") {
+        document.getElementById("email-error").innerText = "Email is required";
+        return;
+    }
+
+    if (membership === "Select Membership Package") {
+        document.getElementById("membership-error").innerText = "Please select a membership package";
+        return;
+    }
+
     // Perform form submission logic here (you can use AJAX, etc.)
     document.getElementById("success-message").style.display = "block";
-    // alert('succesfully submiited');
-    
+}
+function isValidEmail(email) {
+    // Basic email validation using a regular expression
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailPattern.test(email);
 }
